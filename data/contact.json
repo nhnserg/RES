@@ -1,0 +1,32 @@
+{
+	"contactMethods": [
+		{
+			"icon": "Phone",
+			"title": "Téléphone 24/7",
+			"content": "07 63 33 33 36",
+			"href": "tel:0763333336",
+			"description": "Service d'urgence disponible jour et nuit"
+		},
+		{
+			"icon": "MessageCircle",
+			"title": "WhatsApp",
+			"content": "Message instantané",
+			"href": "https://wa.me/33763333336",
+			"description": "Réponse rapide via WhatsApp"
+		},
+		{
+			"icon": "Mail",
+			"title": "Email",
+			"content": "tadevosyan050@gmail.com",
+			"href": "mailto:tadevosyan050@gmail.com",
+			"description": "Pour devis et informations"
+		},
+		{
+			"icon": "MapPin",
+			"title": "Adresse",
+			"content": "",
+			"href": "#",
+			"description": "13009 Marseille, France"
+		}
+	]
+}

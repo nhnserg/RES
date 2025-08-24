@@ -1,0 +1,62 @@
+{
+  "pricingZones": [
+    {
+      "id": "marseille-centre",
+      "icon": "MapPin",
+      "title": "Marseille Centre",
+      "price": "89",
+      "description": "1er - 8ème arrondissements",
+      "features": [
+        "Intervention < 20 minutes",
+        "Tarif fixe jour/nuit",
+        "Pas de frais cachés",
+        "Paiement carte accepté"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "marseille-peripherie",
+      "icon": "Truck",
+      "title": "Marseille Périphérie",
+      "price": "119",
+      "description": "9ème - 16ème arrondissements",
+      "features": [
+        "Intervention < 30 minutes",
+        "Tous types de véhicules",
+        "Service 24h/24",
+        "Devis téléphonique gratuit"
+      ]
+    },
+    {
+      "id": "urgence-nuit-weekend",
+      "icon": "Clock",
+      "title": "Urgence Nuit/Weekend",
+      "price": "149",
+      "description": "Supplément 20h-6h et week-end",
+      "features": [
+        "Disponible 24h/24",
+        "Équipe de nuit dédiée",
+        "Intervention prioritaire",
+        "Assurance tous risques"
+      ]
+    }
+  ],
+  "additionalServices": [
+    {
+      "service": "Remorquage longue distance",
+      "price": "À partir de 1,50€/km"
+    },
+    {
+      "service": "Dépannage sur place",
+      "price": "69€"
+    },
+    {
+      "service": "Mise en fourrière",
+      "price": "45€"
+    },
+    {
+      "service": "Transport véhicule accidenté",
+      "price": "Sur devis"
+    }
+  ]
+}

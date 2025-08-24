@@ -1,0 +1,30 @@
+{
+  "features": [
+    {
+      "icon": "Clock",
+      "title": "Intervention Rapide",
+      "description": "Moins de 30 minutes d'attente en moyenne sur Marseille. Service d'urgence 24h/24."
+    },
+    {
+      "icon": "Shield",
+      "title": "Service Sécurisé",
+      "description": "Matériel professionnel moderne, chauffeurs formés, assurance tous risques incluse."
+    },
+    {
+      "icon": "Users",
+      "title": "Équipe Expérimentée",
+      "description": "Plus de 15 ans d'expérience dans le remorquage. Équipe certifiée et professionnelle."
+    },
+    {
+      "icon": "Award",
+      "title": "Tarifs Transparents",
+      "description": "Prix fixe annoncé au téléphone, pas de frais cachés. Devis gratuit en 2 minutes."
+    }
+  ],
+  "stats": [
+    { "number": "500+", "label": "Interventions/mois" },
+    { "number": "< 30min", "label": "Temps d'intervention" },
+    { "number": "24/7", "label": "Service disponible" },
+    { "number": "98%", "label": "Clients satisfaits" }
+  ]
+}

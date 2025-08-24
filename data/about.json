@@ -1,0 +1,44 @@
+{
+  "stats": [
+    {
+      "icon": "Clock",
+      "label": "Années d'expérience",
+      "value": "15+"
+    },
+    {
+      "icon": "Users",
+      "label": "Interventions par mois",
+      "value": "500+"
+    },
+    {
+      "icon": "Shield",
+      "label": "Taux de satisfaction",
+      "value": "98%"
+    },
+    {
+      "icon": "Award",
+      "label": "Certifications pro",
+      "value": "3"
+    }
+  ],
+  "team": [
+    {
+      "name": "Jean Dupont",
+      "role": "Fondateur & Gérant",
+      "experience": "15 ans d'expérience",
+      "description": "Expert en dépannage automobile, Jean a créé l'entreprise avec la volonté d'offrir un service de qualité."
+    },
+    {
+      "name": "Marie Martin",
+      "role": "Responsable Dispatch",
+      "experience": "8 ans d'expérience",
+      "description": "Coordonne les interventions 24h/24. Assure un temps de réponse optimal pour chaque demande."
+    },
+    {
+      "name": "Pierre Rousseau",
+      "role": "Chauffeur Senior",
+      "experience": "12 ans d'expérience",
+      "description": "Spécialisé dans le remorquage de véhicules de luxe et le transport longue distance."
+    }
+  ]
+}

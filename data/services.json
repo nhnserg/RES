@@ -1,0 +1,76 @@
+{
+  "services": [
+    {
+      "id": "remorquage-voitures",
+      "icon": "Car",
+      "title": "Remorquage Voitures",
+      "description": "Prise en charge de tous types de véhicules légers avec un matériel professionnel adapté.",
+      "features": ["Berlines, citadines", "Transport sécurisé", "Assurance incluse"]
+    },
+    {
+      "id": "remorquage-utilitaires",
+      "icon": "Truck",
+      "title": "Remorquage Utilitaires",
+      "description": "Spécialisés dans le remorquage de véhicules utilitaires jusqu'à 3,5 tonnes.",
+      "features": ["Camionnettes, fourgons", "Matériel spécialisé", "Chauffeurs expérimentés"]
+    },
+    {
+      "id": "depannage-24h",
+      "icon": "Clock",
+      "title": "Dépannage 24h/24",
+      "description": "Service d'urgence disponible jour et nuit, week-end et jours fériés.",
+      "features": ["Disponible 24h/24", "Équipe de nuit", "Intervention < 30min"]
+    },
+    {
+      "id": "longue-distance",
+      "icon": "MapPin",
+      "title": "Longue Distance",
+      "description": "Transport de véhicules sur longue distance vers toute la France et l'Europe.",
+      "features": ["Toute la France", "Transport Europe", "Suivi en temps réel"]
+    },
+    {
+      "id": "depannage-sur-place",
+      "icon": "Wrench",
+      "title": "Dépannage sur Place",
+      "description": "Réparations rapides directement sur place pour vous éviter un remorquage.",
+      "features": ["Batterie, pneus", "Mise en route", "Diagnostic rapide"]
+    },
+    {
+      "id": "assistance-complete",
+      "icon": "Shield",
+      "title": "Assistance Complète",
+      "description": "Service complet d'assistance routière avec prise en charge administrative.",
+      "features": ["Gestion assurance", "Véhicule de remplacement", "Suivi dossier"]
+    }
+  ],
+  "servicesPage": [
+    {
+      "id": "remorquage-voitures-page",
+      "icon": "Car",
+      "title": "Remorquage Voitures",
+      "description": "Remorquage de véhicules légers, berlines, citadines et compactes. Intervention rapide avec matériel adapté.",
+      "features": ["Tous types de voitures", "Matériel professionnel", "Conduite sécurisée"]
+    },
+    {
+      "id": "remorquage-utilitaires-page",
+      "icon": "Truck",
+      "title": "Remorquage Utilitaires",
+      "description": "Prise en charge des véhicules utilitaires, camionnettes et fourgons jusqu'à 3,5 tonnes.",
+      "features": ["Jusqu'à 3,5T", "Équipement spécialisé", "Chauffeurs expérimentés"]
+    },
+    {
+      "id": "depannage-urgent-page",
+      "icon": "Clock",
+      "title": "Dépannage Urgent 24h/24",
+      "description": "Service d'urgence disponible 24 heures sur 24, 7 jours sur 7 partout à Marseille.",
+      "features": ["24h/24 - 7j/7", "Intervention < 30min", "Équipe de nuit"]
+    },
+    {
+      "id": "remorquage-longue-distance-page",
+      "icon": "MapPin",
+      "title": "Remorquage Longue Distance",
+      "description": "Transport de véhicules sur longue distance vers toute la France et l'Europe.",
+      "features": ["Toute la France", "Transport sécurisé", "Assurance complète"]
+    }
+  ]
+}
