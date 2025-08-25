@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://remorquage-marseille.fr/sitemap.xml
+Sitemap: https://resud.fr/sitemap.xml

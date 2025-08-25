@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://remorquage-marseille.fr/</loc>
+    <loc>https://resud.fr/</loc>
     <lastmod>2024-01-01</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://remorquage-marseille.fr/services</loc>
+    <loc>https://resud.fr/services</loc>
     <lastmod>2024-01-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://remorquage-marseille.fr/tarifs</loc>
+    <loc>https://resud.fr/tarifs</loc>
     <lastmod>2024-01-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://remorquage-marseille.fr/a-propos</loc>
-    <lastmod>2024-01-01</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://remorquage-marseille.fr/contact</loc>
+    <loc>https://resud.fr/contact</loc>
     <lastmod>2024-01-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://remorquage-marseille.fr/demande</loc>
+    <loc>https://resud.fr/demande</loc>
     <lastmod>2024-01-01</lastmod>
     <priority>0.7</priority>
   </url>
