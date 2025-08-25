@@ -1,9 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -17,53 +13,16 @@ import {
 	SelectValue,
 } from '@/components/ui/select'
 import { Send, CheckCircle } from 'lucide-react'
-
-const formSchema = z.object({
-	name: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
-	phone: z.string().min(10, 'Numéro de téléphone invalide'),
-	email: z
-		.string()
-		.email('Adresse email invalide')
-		.optional()
-		.or(z.literal('')),
-	vehicleType: z.string().min(1, 'Veuillez sélectionner le type de véhicule'),
-	location: z.string().min(5, 'Veuillez indiquer le lieu du véhicule'),
-	destination: z.string().min(5, 'Veuillez indiquer la destination'),
-	urgency: z.string().min(1, "Veuillez indiquer le niveau d'urgence"),
-	description: z.string().min(10, 'Veuillez décrire la situation'),
-})
-
-type FormData = z.infer<typeof formSchema>
+import { useRequestForm } from '@/hooks/useRequestForm'
 
 export function RequestForm() {
-	const [isSubmitted, setIsSubmitted] = useState(false)
-	const [isSubmitting, setIsSubmitting] = useState(false)
-
+	const { form, onSubmit, isSubmitting, isSubmitted } = useRequestForm()
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
-		reset,
 		setValue,
-		watch,
-	} = useForm<FormData>({
-		resolver: zodResolver(formSchema),
-	})
-
-	const onSubmit = async (data: FormData) => {
-		setIsSubmitting(true)
-
-		// Simulate API call
-		await new Promise(resolve => setTimeout(resolve, 1000))
-
-		console.log('Request form submitted:', data)
-		setIsSubmitted(true)
-		setIsSubmitting(false)
-		reset()
-
-		// Reset success message after 5 seconds
-		setTimeout(() => setIsSubmitted(false), 5000)
-	}
+	} = form
 
 	if (isSubmitted) {
 		return (
@@ -91,6 +50,7 @@ export function RequestForm() {
 			</h3>
 
 			<form onSubmit={handleSubmit(onSubmit)} className='space-y-6'>
+				{/* Nom + Téléphone */}
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 					<div>
 						<Label htmlFor='name'>Nom complet *</Label>
@@ -103,7 +63,6 @@ export function RequestForm() {
 							<p className='text-red-500 text-sm mt-1'>{errors.name.message}</p>
 						)}
 					</div>
-
 					<div>
 						<Label htmlFor='phone'>Téléphone *</Label>
 						<Input
@@ -120,6 +79,7 @@ export function RequestForm() {
 					</div>
 				</div>
 
+				{/* Email */}
 				<div>
 					<Label htmlFor='email'>Email (optionnel)</Label>
 					<Input
@@ -133,6 +93,7 @@ export function RequestForm() {
 					)}
 				</div>
 
+				{/* Vehicle + Urgency */}
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 					<div>
 						<Label>Type de véhicule *</Label>
@@ -156,7 +117,6 @@ export function RequestForm() {
 							</p>
 						)}
 					</div>
-
 					<div>
 						<Label>Urgence *</Label>
 						<Select onValueChange={value => setValue('urgency', value)}>
@@ -182,6 +142,7 @@ export function RequestForm() {
 					</div>
 				</div>
 
+				{/* Location */}
 				<div>
 					<Label htmlFor='location'>Lieu de prise en charge *</Label>
 					<Input
@@ -197,6 +158,7 @@ export function RequestForm() {
 					)}
 				</div>
 
+				{/* Destination */}
 				<div>
 					<Label htmlFor='destination'>Destination *</Label>
 					<Input
@@ -212,6 +174,7 @@ export function RequestForm() {
 					)}
 				</div>
 
+				{/* Description */}
 				<div>
 					<Label htmlFor='description'>Description de la situation *</Label>
 					<Textarea
