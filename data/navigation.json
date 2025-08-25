@@ -1,23 +1,21 @@
 {
-  "mainNavigation": [
-    { "name": "Accueil", "href": "/" },
-    { "name": "Services", "href": "/services" },
-    { "name": "Tarifs", "href": "/tarifs" },
-    { "name": "À propos", "href": "/a-propos" },
-    { "name": "Contact", "href": "/contact" }
-  ],
-  "footerNavigation": {
-    "services": [
-      { "name": "Remorquage voitures", "href": "/services" },
-      { "name": "Remorquage utilitaires", "href": "/services" },
-      { "name": "Dépannage urgent", "href": "/services" },
-      { "name": "Longue distance", "href": "/services" }
-    ],
-    "company": [
-      { "name": "À propos", "href": "/a-propos" },
-      { "name": "Nos tarifs", "href": "/tarifs" },
-      { "name": "Contact", "href": "/contact" },
-      { "name": "Demander un remorquage", "href": "/demande" }
-    ]
-  }
+	"mainNavigation": [
+		{ "name": "Accueil", "href": "/" },
+		{ "name": "Services", "href": "/services" },
+		{ "name": "Tarifs", "href": "/tarifs" },
+		{ "name": "Contact", "href": "/contact" }
+	],
+	"footerNavigation": {
+		"services": [
+			{ "name": "Remorquage voitures", "href": "/services" },
+			{ "name": "Remorquage utilitaires", "href": "/services" },
+			{ "name": "Dépannage urgent", "href": "/services" },
+			{ "name": "Longue distance", "href": "/services" }
+		],
+		"company": [
+			{ "name": "Nos tarifs", "href": "/tarifs" },
+			{ "name": "Contact", "href": "/contact" },
+			{ "name": "Demander un remorquage", "href": "/demande" }
+		]
+	}
 }

@@ -1,22 +1,30 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X, Phone } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import navigationData from '@/data/navigation.json';
+import { useState } from 'react'
+import Link from 'next/link'
+import { Menu, X, Phone } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import navigationData from '@/data/navigation.json'
+import Image from 'next/image'
 
 export function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  return (
+	return (
 		<nav className='bg-white shadow-lg sticky top-0 z-50'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex justify-between items-center h-16'>
 					{/* Logo */}
 					<Link href='/' className='flex items-center'>
-						<span className='text-2xl font-bold text-blue-600'>
-							Remorquage Marseille
+						<Image
+							src='/logo.webp'
+							alt='Remorquage Marseille Logo'
+							width={120} // можно регулировать
+							height={48}
+							className='h-14 w-auto object-contain'
+						/>
+						<span className='text-2xl font-bold text-blue-600 ml-2'>
+							Remorquage Express Sud
 						</span>
 					</Link>
 
