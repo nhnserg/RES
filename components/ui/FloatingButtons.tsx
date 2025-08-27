@@ -21,7 +21,7 @@ export function FloatingButtons() {
 
 			{/* Phone Button */}
 			<motion.a
-				href='tel:0763333336'
+				href='tel:+33763333336'
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
 				className='w-16 h-16 bg-orange-600 hover:bg-orange-700 text-white rounded-full shadow-lg flex items-center justify-center transition-colors'
@@ -31,7 +31,7 @@ export function FloatingButtons() {
 			</motion.a>
 
 			{/* Pulse animation for phone button */}
-			<div className='absolute bottom-0 right-0 w-16 h-16 bg-orange-600 rounded-full animate-ping opacity-20'></div>
+			<div className='absolute bottom-0 right-0 w-16 h-16 bg-orange-600 rounded-full animate-ping opacity-20 pointer-events-none'></div>
 		</div>
 	)
 }
